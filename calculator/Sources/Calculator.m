@@ -209,7 +209,7 @@ static NSUInteger kMaximumFractionDigits = 8;
 
 - (void)sub
 {
-    // Set the automaton as beign in an substraction state
+    // Set the automaton as beign in a substraction state
     [operator autorelease];
     operator = [[NSNumber numberWithInteger:kSubstraction] retain];
     [self operate];
@@ -217,7 +217,7 @@ static NSUInteger kMaximumFractionDigits = 8;
 
 - (void)mul
 {
-    // Set the automaton as beign in an multiplication state
+    // Set the automaton as beign in a multiplication state
     [operator autorelease];
     operator = [[NSNumber numberWithInteger:kMultiplication] retain];
     [self operate];
@@ -225,7 +225,7 @@ static NSUInteger kMaximumFractionDigits = 8;
 
 - (void)div
 {
-    // Set the automaton as beign in an division state
+    // Set the automaton as beign in a division state
     [operator autorelease];
     operator = [[NSNumber numberWithInteger:kDivision] retain];
     [self operate];
