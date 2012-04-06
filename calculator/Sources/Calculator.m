@@ -58,12 +58,12 @@ static NSUInteger kMaximumFractionDigits = 8;
         [operandFormatter setMaximumFractionDigits:kMaximumFractionDigits];
         // maximum cull for large quantities
         [operandFormatter setMaximum:
-                [NSNumber numberWithInteger:
-                    pow(10, kMaximumSignificantDigits) - 1]];
+                [NSNumber numberWithInteger:999999999]];
+                    //pow(10, kMaximumSignificantDigits) - 1]];
         // minimum cull for small quantities
         [operandFormatter setMinimum:
-                [NSNumber numberWithInteger:
-                    pow(10, -kMaximumSignificantDigits) + 1]];
+                [NSNumber numberWithInteger:-99999999]];
+                    //pow(10, -kMaximumSignificantDigits) + 1]];
     }
     return self;
 }
